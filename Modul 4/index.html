@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+  <nav>
+    <ul id="menu-list" class="hidden">
+      <li>
+        <a href="#" style="color: aliceblue;">HOME</a>
+      </li>
+      <li>
+        <a href="#" style="color: aliceblue;">CONTACT US</a>
+      </li>
+      <li>
+        <a href="#" style="color: aliceblue;">TENTANG SAYA</a>
+      </li>
+    </ul>
+    <div id="menu-icon" class="menu-icon">
+      <i class="ph-fill ph-list" style="color: aliceblue;"></i>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>ToDo List</h1>
+    <input type="text" id="taskInput" placeholder="Add New Task">
+    <button onclick="addTask()">Add Task</button>
+    <div class="filter-btns">
+
+      <button onclick="filterTasks('completed')">Completed</button>
+    </div>
+    <ul id="taskList">
+    </ul>
+  </div>
+  <script src="pbw.js"></script>
+</body>
+
+</html>
